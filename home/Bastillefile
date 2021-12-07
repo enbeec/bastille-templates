@@ -1,0 +1,8 @@
+PKG zsh zsh-antigen zsh-completions vim git tree rsync curl wget doas
+
+CP /usr/local/etc/doas.conf usr/local/etc/doas.conf
+
+CMD pw useradd -n val -G wheel -s /usr/local/bin/zsh -d /usr/home/val
+
+MOUNT /home/val usr/home/val nullfs rw 0 0
+
